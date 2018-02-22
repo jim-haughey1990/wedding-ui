@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body,h1,h2{font-family: "Raleway", sans-serif;}
+.bw{color: #fff;text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.bgimg {background-image: url("/assets/images/2.jpg")}
+.bgimg2 {background-image: url("/assets/images/st-pats.jpg")}
