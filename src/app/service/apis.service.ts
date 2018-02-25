@@ -19,11 +19,11 @@ export class ApisService {
   }
 
   getGuests(q: string) {
-    return this.http.get('/api/guests/search?q=' + q).map(res => res.json());
+    return this.http.get('/api/guests.php?q=' + q).map(res => res.json());
   }
 
   saveGuest(q: IGuest[]) {
     const body = JSON.stringify(q);
-    return this.http.post('/api/guests/save', body, this.options).map(res => res.json());
+    return this.http.post('/api/save_guest.php', body, this.options).map(res => res.json());
   }
 }
